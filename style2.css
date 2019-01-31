@@ -1,0 +1,140 @@
+body {
+	background: #f9fafc;
+	font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	font-weight: 600;
+}
+
+p, a {
+	color: #69696a;
+	text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.logo {
+    font-size: 1em;
+    margin: 0px 0px 15px;
+}
+
+.cta {
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	background: #000;
+    padding: 10px 0px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+section {
+	margin: 40px 0px 30px;
+}
+
+section p {
+	border-left: 1px solid #69696a;
+	padding-left: 30px;
+}
+
+.circles {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        padding: 20px 30px;
+    }
+    
+    li {
+        display: inline-block;
+        padding-left: 20px;
+    }
+    
+    nav > div {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    .logo {
+        font-size: 1.25em;
+        flex: 2;
+    }
+    
+    .cta {
+        display: inline-block;
+        background: #000;
+        padding: 10px 20px;
+    }
+    
+    section {
+        display: flex;
+        margin: 150px 0px 50px;
+    }
+    
+    section > div:first-child {
+        width: 50%;
+    }
+    
+    section p {
+        border-left: 1px solid #69696a;
+        padding-left: 30px;
+    }
+    
+    .circles {
+        display: block;
+        position: relative;
+        width: 50%;
+        height: 460px;
+    }
+    
+    .big {
+        position: absolute;
+        top: 0px;
+        right: 140px;
+        z-index: 2;
+        background: rgba(247, 136, 167, 0.6);
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+    }
+    
+    .med {
+        position: absolute;
+        top: 160px;
+        right: 10px;
+        z-index: 1;
+        background: rgba(247, 193, 162, 0.7);
+        height: 240px;
+        width: 240px;
+        border-radius: 120px;
+    }
+    
+    .small {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        z-index: 0;
+        background: rgba(207, 130, 213, 0.6);
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+    }
+    
+    .scroll {
+        text-align: center;
+    }
+}
